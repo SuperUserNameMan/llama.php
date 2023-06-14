@@ -77,8 +77,8 @@ enum llama_ftype {
     LLAMA_FTYPE_MOSTLY_Q6_K          = 18,// except 1d tensors
 };
 
-// NOTE : _llama_hparams should not be part of the public API
-// but the sizeof this struct is required by LLaMa->load_session()
+// XXX NOTE : _llama_hparams should not be part of the public API
+// but the sizeof this struct is required by LLaMaFFI->load_session()
 typedef struct _llama_hparams {
     uint32_t n_vocab ;
     uint32_t n_ctx ;
@@ -90,7 +90,8 @@ typedef struct _llama_hparams {
     enum llama_ftype ftype;
 } _llama_hparams;
 
-// NOTE : this
+// XXX NOTE : this is not part of the official code. It's just a
+// helper for LLaMaFFI->load_session()
 typedef struct _llama_session_file_header {
 	uint32_t magic ;
 	uint32_t version ;
@@ -318,3 +319,5 @@ void llama_reset_timings(struct llama_context * ctx);
 // Print system information
 //LLAMA_API
 const char * llama_print_system_info(void);
+
+// EOF

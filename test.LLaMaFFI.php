@@ -1,4 +1,5 @@
 <?php
+//TAB=4
 
 require_once('LLaMaFFI.class.php');
 
@@ -12,7 +13,7 @@ echo "CPU procs : ".$LLAMA::CPU_PROCS().PHP_EOL;
 
 $PROMPT = "Hello my name is";
 
-$TOK_INPUT = $LLAMA->tokenize( $PROMPT , true ) ; // XXX ajouter un espace devant comme dans le code source original ? (pas vu de différence)
+$TOK_INPUT = $LLAMA->tokenize( $PROMPT , true ) ;
 
 
 

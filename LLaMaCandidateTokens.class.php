@@ -1,4 +1,5 @@
-<?php // TAB = 4
+<?php
+//TAB=4
 
 class LLaMaCandidateTokens
 {
