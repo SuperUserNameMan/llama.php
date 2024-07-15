@@ -1,3 +1,5 @@
+This is kind of abandonned project. I'm not even sure it still works with current version of `llama.cpp`. I don't deleted it because it might still be usefull for learning purpose.
+
 # llama.php
 PHP 8 bindings to [ `llama.cpp` ](https://github.com/ggerganov/llama.cpp) using FFI
 
